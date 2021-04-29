@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: better-sqlite3
+    versions:
+    - 7.1.2
+    - 7.1.4
+  - dependency-name: enmap
+    versions:
+    - 5.8.4
+  - dependency-name: sqlite3
+    versions:
+    - 5.0.1
